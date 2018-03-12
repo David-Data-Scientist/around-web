@@ -1,9 +1,10 @@
+
 import React from 'react';
 import $ from 'jquery';
 import { Form, Icon, Input, Button, message } from 'antd';
 import { Link } from 'react-router-dom';
 import { API_ROOT } from '../constants';
-import PropTypes from 'prop-types';
+import { PropTypes } from 'prop-types';
 
 const FormItem = Form.Item;
 
@@ -23,7 +24,7 @@ class NormalLoginForm extends React.Component {
                     data: JSON.stringify({
                         username: values.username,
                         password: values.password,
-                    })
+                    }),
                 }).then((response) => {
                     this.props.handleLogin(response);
                 }, (error) => {

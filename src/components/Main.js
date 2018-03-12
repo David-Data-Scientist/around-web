@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { Register } from './Register';
 import { Login } from './Login';
 import { Home } from './Home';
-import { Route, Switch, Redirect } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 
 export class Main extends React.Component {
     static propTypes = {
@@ -12,7 +13,7 @@ export class Main extends React.Component {
     }
 
     getLogin = () => {
-        return this.props.isLoggedIn ? <Redirect to="/home"/> : <Login handleLogin={this.props.handleLogin}/>
+        return this.props.isLoggedIn ? <Redirect to="/home"/> : <Login handleLogin={this.props.handleLogin}/>;
     }
 
     getHome = () => {
@@ -20,7 +21,7 @@ export class Main extends React.Component {
     }
 
     getRoot = () => {
-        return <Redirect to="/login"/>;
+        return <Redirect to="/login"/>
     }
 
     render() {
@@ -37,3 +38,5 @@ export class Main extends React.Component {
         );
     }
 }
+
+
