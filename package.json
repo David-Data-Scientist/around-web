@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "antd": "^2.13.11",
-    "jquery": "^3.2.1",
+    "jquery": "~3.4.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
